@@ -1,0 +1,2 @@
+1. The bug was that the inputs num1 and num2 were treated as strings so when we end up using the plus operator, it is simply just concatenated while treated as strings not numbers. '1' + '22' = '122'
+2. To fix this, I can wither add a check to ensure that the inputs can only be numebrs. If it isn't, then I would cast both num1 and num2 using the Numer() function to ensure they are a number before doing any arithmetic.
